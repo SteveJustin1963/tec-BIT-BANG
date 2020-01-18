@@ -1,2 +1,5 @@
-# 16.2-tecBang
-Bit Bang Serial without UART, use a free port and USB to TTL serial converter cables. FT232R chip is in cable.
+# tec-Bang
+A Bit Bang Serial for the TEC-1 without UART
+
+Use a free IO line and USB-TTL cable with embedded FT232R chip 
+
