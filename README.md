@@ -59,11 +59,9 @@ Jim Robertson
 
 https://github.com/SteveJustin1963/tec-PPI
 
-
-### This project source:
 http://www.ganssle.com/articles/auart.htm
 
-Others:
+https://en.wikipedia.org/wiki/Bit_banging
 
 https://www.chiark.greenend.org.uk/~sgtatham/putty/
 
@@ -73,7 +71,6 @@ https://cdn-shop.adafruit.com/datasheets/DS_PL2303TA_d20120504.pdf
 
 http://pages.cs.wisc.edu/~bolo/shipyard/3ins4th.html
 
-
 http://www.oshonsoft.com/z80.html 
 
 http://www.asm.80.com
@@ -82,6 +79,7 @@ http://labs.domipheus.com/blog/teensy-z80-part-1-intro-memory-serial-io-and-disp
 
 https://github.com/postfalk/z80/blob/master/z80asm/bootloader.asm
 
+https://raspberrypi.stackexchange.com/questions/1987/can-raspberry-pi-reliably-bit-bang-a-9600-baud-serial-and-is-there-example-code
 
 ## Iterate, new hypotheses or predictions
 
