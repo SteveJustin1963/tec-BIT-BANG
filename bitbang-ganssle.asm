@@ -15,32 +15,32 @@
 brid:
 	in	a,(serial_port)
 	and	data_bit
-	jp	z,brid		          ; loop till serial not busy
+	jp	z,brid		; loop till serial not busy
 bri1:	in	a,(serial_port)
 	and	data_bit
-	jp	nz,bri1 	          ; loop till start bit comes
-	ld	hl,-7		            ; bit count
+	jp	nz,bri1		; loop till start bit comes
+	ld	hl,-7		; bit count
 bri3:	ld	e,3
-bri4:	dec	e		            ; 42 machine cycle loop
+bri4:	dec	e		; 42 machine cycle loop
 	jp	nz,bri4
-	nop			                ; balance cycle counts
-	inc	hl		              ; inc counter every 98 cycles
-				                  ; while serial line is low
+	nop			; balance cycle counts
+	inc	hl		; inc counter every 98 cycles
+				; while serial line is low
 	in	a,(serial_port)
 	and	data_bit
-	jp	z,bri3		          ; loop while serial line low
-	push	hl		            ; save count for halfbt computation
+	jp	z,bri3		; loop while serial line low
+	push	hl		; save count for halfbt computation
 	inc	h
-	inc	l		                ; add 101h w/o doing internal carry
-	ld	(bittim),hl	        ; save bit time
-	pop	hl		              ; restore count
-	or	a		                ; clear carry
-	ld	a,h		              ; compute hl/2
+	inc	l		; add 101h w/o doing internal carry
+	ld	(bittim),hl	; save bit time
+	pop	hl		; restore count
+	or	a		; clear carry
+	ld	a,h		; compute hl/2
 	rra
 	ld	h,a
 	ld	a,l
 	rra
-	ld	l,a		              ; hl=count/2
+	ld	l,a		; hl=count/2
 	ld	(halfbt),hl
 	ret
 ;
@@ -55,25 +55,25 @@ bri4:	dec	e		            ; 42 machine cycle loop
 ; to serial_low sets it low, regardless of the contents set to the
 ; port.
 ;
-cout:	ld	b,11		   ; # bits to send
-				           ; (start, 8 data, 2 stop)
-	xor	a		           ; clear carry for start bit
-co1:	jp	nc,cc1		   ; if carry, will set line high
-	out	(serial_high),a       ; set serial line high
+cout:	ld	b,11		; # bits to send
+				; (start, 8 data, 2 stop)
+	xor	a		; clear carry for start bit
+co1:	jp	nc,cc1		; if carry, will set line high
+	out	(serial_high),a	; set serial line high
 	jp	cc2
 cc1:	out	(serial_low),a	; set serial line low
-	jp	cc2		            ; idle; balance # cycles with those
-			            	; from setting output high
+	jp	cc2		; idle; balance # cycles with those
+				; from setting output high
 cc2:	ld	hl,(bittim)	; time per bit
 co2:	dec	l
-	jp	nz,co2	    	; idle for one bit time
+	jp	nz,co2		; idle for one bit time
 	dec	h
 	jp	nz,co2		; idle for one bit time
-	scf		    	; set carry high for next bit
-	ld	a,c	    	; a=character
-	rra		    	; shift it into the carry
+	scf			; set carry high for next bit
+	ld	a,c		; a=character
+	rra			; shift it into the carry
 	ld	c,a 
-	dec	b	    	; --bit count
+	dec	b		; --bit count
 	jp	nz,co1		; send entire character
 	ret
 ;
