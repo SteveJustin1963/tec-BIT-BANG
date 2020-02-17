@@ -1,13 +1,7 @@
 # tec-BANG
 
-
-
- 
-
 ## Abstract
-A Bit Bang Serial for the TEC-1 without UART
-
-
+A Bit Bang Serial for the TEC-1 (without UART) and hex transfer program.
 
 ## Introduction
 Bitbang serial without hardware based on http://www.ganssle.com/articles/auart.htm
