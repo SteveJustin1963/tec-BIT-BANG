@@ -110,6 +110,6 @@ Upon receiving the 01 code the TEC1 executes the XC@ instruction, which collects
 The XC! instruction works similarly. The host sends the 02 code followed by two bytes for the address and one byte for the value to be stored. 
 For the XCALL instruction the host sends the 03 code followed by two bytes for the address. Using the XC! instruction you can download short subroutines for testing, or long programs if the target has enough RAM., or program onboard EEPROM if present. Once the routine is downloaded, the host can send the XCALL instruction to cause the TEC1 to jump to the newly downloaded routine. If the routine ends with a return instruction (RTS) then control will automatically return to the 3-instruction monitor.”
 
-### ?
+ 
 
  
