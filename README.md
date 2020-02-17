@@ -7,10 +7,6 @@
 ## Abstract
 A Bit Bang Serial for the TEC-1 without UART
 
-Use a free IO line and USB-TTL cable with embedded FT232R chip 
-
-Bit Bang Serial without UART. use a free port and  USB to TTL serial converter cables. 
-FT232R chip is in cable. 
 
 
 ## Introduction
@@ -27,7 +23,10 @@ Need bit bang code with simple uploader, uploading via serial port, but no seria
 
 
 ## Method
-Run TTY app on pC eg PUTTY through USB to TTL serial cable (PL2303TA USB to Serial Bridge Controller). This is a cheap ebay item. Has 4 wires; Red=+5V, Black=GND, White=RXD and Green=TXD. No need for a “level shifter to convert RS-232 to TTL with a MAX232 chip. We can add current limit resistors for protection if needed.  Others may have extra wires for RTS, CTS, DSR etc. Ignore these. Win-7/10 wil auto load driver for it. Device manager will show new com-port. Verify; Run and type  “cmd”, enter, type in c:/mode, enter. 
+
+Use a free IO line and USB-TTL cable with embedded FT232R chip. Bit Bang Serial without UART, use a free port and USB to TTL serial converter cables. FT232R chip is in cable. 
+
+Run TTY app on PC eg PUTTY through USB to TTL serial cable (PL2303TA USB to Serial Bridge Controller). This is a cheap ebay item. Has 4 wires; Red=+5V, Black=GND, White=RXD and Green=TXD. No need for a “level shifter to convert RS-232 to TTL with a MAX232 chip. We can add current limit resistors for protection if needed.  Others may have extra wires for RTS, CTS, DSR etc. Ignore these. Win-7/10 wil auto load driver for it. Device manager will show new com-port. Verify; Run and type  “cmd”, enter, type in c:/mode, enter. 
 
 Enter hex into TEC1 keypad (add to ROM ?)
 Or via bennvenn.myshopify.com/pages/eprom-emulator
