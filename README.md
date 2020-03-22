@@ -1,6 +1,10 @@
 
-Investigate Bit Bang Serial for the TEC-1 in the absence of serial hardware, for io and bootloading code. 
+Investigate Bit Bang Serial for the TEC-1 
+* without serial port hardware, find a free port bit
+* transfer hex to ram, then enter ADD then GO
+* connect a USB to TTL serial converter cables (eg FT232R in the cable)
 
-Allocate a free port and connect a USB to TTL serial converter cables. It should have a FT232R chip in the cable.
+http://www.edaboard.com/attachment.php?attachmentid=82290&d=1351849308
 
-notes https://github.com/SteveJustin1963/tec-BANG/wiki
+
+
