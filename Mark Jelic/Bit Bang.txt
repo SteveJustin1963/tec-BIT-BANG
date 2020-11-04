@@ -1,0 +1,50 @@
+Mark Jelic
+JtSpdoulcmooynsidor 7ed  · 
+Hardware soldered up in a night. Now to steal/hack/code the software for the BitBang Serial Interface.
+74ls244 along with an EPROM to hold the code.
+Comments
+Stephen Justin
+badge icon
+awesome!! tell the story, what are you building?
+ · Reply · Share · 17w · Edited
+Mark Jelic
+Author
+The story is that there are a few options out there to do serial comms (Ben and Brian come to mind) but all use bigger or complex chips when to do serial, as I proved to myself the interface to the MAX7219 chip, isn’t that hard and only needs minimal c… See More
+ · Reply · Share · 17w
+Scott Gregory
+You are using the 7219 to drive 8x8 or using it as a serial to parallel converter?
+ · Reply · Share · 16w
+Mark Jelic
+Author
+Scott Gregory didn’t know you can use it as a serial to parallel converter! No, I made drive an 8x8 module. I put a post of it working in here.
+0:00 / 0:09
+ · Reply · Share · 16w
+Scott Gregory
+Ah! That makes sense then. That works to bit bang. Ben's board, and others, are more for 8N1 Serial, eg 10 bit packets.
+ · Reply · Share · 16w
+Write a reply...
+
+Stephen Justin
+badge icon
+would you use 74ls244 and 373 interchangably ?
+ · Reply · Share · 16w
+Mark Jelic
+Author
+Stephen Justin very good question and I’m about to find out with this mod and Ken’s new board which uses a 373.
+ · Reply · Share · 16w
+Stephen Justin
+badge icon
+i also got the feeling 272 cant handle bitbang
+ · Reply · Share · 16w
+Mark Jelic
+Author
+Stephen Justin I’m certainly no expert on this, but someone commented on my TEC+lcD schematic that a latch is not appropriate for input on the bus, that it should be a buffer. And after thinking about it (but not claiming it is gospel)... a latch will … See More
+ · Reply · Share · 16w · Edited
+Scott Gregory
+A latch can be used so long as it is tri-state. If you look at the 373's truth table, if output control is high then the latch outputs all go high impedance. The results of not going Hi-Z to free up the bus ranges from an outright crash of the Z80 to … See More
+ · Reply · Share · 16w
+Ken Stone
+The difference between using a 373 and a 244 here is that when the 373 is addressed, the data is held stable during the read. With a 244, the data may change during the read, resulting in goodness knows what.
+ · Reply · Share · 16w
+Ken Stone
+Stephen Justin Jim was bitbanging with a 373 in the DAT/JMON. the 373 is a tristate buffer with the ability to hold the data if desired. It is not an edge triggered latch like the 273.
