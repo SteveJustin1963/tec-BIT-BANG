@@ -1,19 +1,25 @@
 ## Introduction
-Investigate Bit Bang Serial for the TEC-1; Bit Bang Serial code plus hex transfer program (raw or Intel), for the TEC-1 without UART.  
+Investigate Bit Bang Serial for the TEC-1, no UART, only latch
+* as a serial hex transfer to and from memory  
+* as serial for apps
+* as a serial for forth
 
-* without serial port hardware, use a latch, transfer binary 
-* connect termnial via USB to TTL serial converter cables (eg FT232R in the cable)
-* see Southern Cross Computer (tec-1 clone) bitbang code, investigate
-* see tec_times 1990 serial up and download
-* see bitbang from http://www.ganssle.com/articles/auart.htm
+ 
+ 
  
 
 
 ## Observe and Question 
 File transfer hex easier than manual keypad entry. But how to transfer code to TEC1?
 
+use
+ 
+* Southern Cross Computer (tec-1 clone) bitbang code
+* tec_times 1990 serial up and download
+* bitbang from http://www.ganssle.com/articles/auart.htm
+
 ## Theory
-Simplest, use bit bang code plus and uploader, via virtual serial port. Can add UART chip to TEC-1 later. Therefore enter small amount of code via hex keypad to run bitbang serial and intel hex transfer.
+Simplest, use bit bang code plus an uploader, via virtual serial port. Can add UART chip to TEC-1 later. Therefore enter small amount of code via hex keypad to run bitbang serial and intel hex transfer.
  
 ## Predict
 
