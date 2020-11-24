@@ -1,27 +1,34 @@
 ## Introduction
 Investigate Bit Bang Serial for the TEC-1, no UART, only latch
-* as a serial hex transfer to and from memory  
-* as serial for apps
-* as a serial for forth
-
- 
- 
  
 
 
 ## Observe and Question 
-File transfer hex easier than manual keypad entry. But how to transfer code to TEC1?
+ascii and or file transfer useful addition to hex keypad entry. whats the easiest hack to transfer to TEC1? bitbang !
+see
 
-use
- 
-* Southern Cross Computer (tec-1 clone) bitbang code
-* tec_times 1990 serial up and download
-* bitbang from http://www.ganssle.com/articles/auart.htm
 
 ## Theory
-Simplest, use bit bang code plus an uploader, via virtual serial port. Can add UART chip to TEC-1 later. Therefore enter small amount of code via hex keypad to run bitbang serial and intel hex transfer.
+https://en.wikipedia.org/wiki/Bit_banging
+
+termnal > ascii > ttl > latch > bit/time/loop > byte > hex or ascii > code
+
+
+bit bang code plus an uploader, via virtual serial port. 
+Can add UART chip to TEC-1 later. 
+Therefore enter small amount of code via hex keypad to run bitbang serial and intel hex transfer.
  
 ## Predict
+* serial hex transfer to and from memory  
+* serial for apps
+* serial for forth
+
+examples  
+* Southern Cross Computer (tec-1 clone) bitbang code
+* tec_times 1990, serial loader
+* bitbang from http://www.ganssle.com/articles/auart.htm
+
+
 
 
 ## Method
