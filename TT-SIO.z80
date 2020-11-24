@@ -1,0 +1,72 @@
+; SERIAL INPUT ROUTINE
+;
+store_st    equ     0898h 
+store_end   equ     089Ah
+
+
+.org    0900h	    ;  
+
+load:       LD HL,(store_st)	;	START ADDRESS IN HL 
+start1:     CALL get_b	        ;	GET BYTE 
+            LD BC,(store_end)	;	PUT END ADDR IN BC 
+            OR A	            ;	CLEAR CARRY FLAG 
+            PUSH HL	    ;	SAVE HL 
+            SBC HL,BC	;	SUB CURRENT ADDR FROM END 
+            POP HL	    ;	RECOVER HL 
+            JR C, start1	;	JUMP IF NOT DONE 
+            RET	        ;	ELSE RETURN TO JMON 
+;
+get_b:      IN A,03	    ;	LOOK FOR START BIT 
+            RLCA	    ;	PUT IN CARRY 
+            JR NC, get_b ;	LOOP UNTIL START BIT FOUND 
+            LD B,40	    ;	DELAY TO HALF WAY IN 
+f_c:        DJNZ f_c	;	FIRST CELL 
+            LD E,00	    ;	E IS RECEIVER BYTE 
+            LD C,08	    ;	C IS COUNT SET FOR 8 BITS 
+in_bit:     IN A,07	    ;	INPUT BIT 
+            RLCA	    ;	INTO CARRY FLAG 
+            RR E	    ;	THEN STORE IN E 
+            LD B,39	    ;	B=HALF CELL DELAY 
+n_c:        DJNZ n_c	;	LOOP TO NEXT CELL ARRIVES 
+            DEC C	    ;	DEC LOOP COUNTER 
+            JR NZ, in_bit ;	JUMP IF 8 BITS NOT DONE 
+            LD A,E	    ;	PUT INPUTTED BYTE IN A 
+            CPL	        ;	AND INVERT TO TRUE FORM 
+            LD (HL),A	;	STORE IN MEMORY 
+            INC HL	    ;	INCREASE MEMORY POINTERS 
+            RET	        ;	RETURN FROM SUBROUTINE
+		
+
+; SERIAL OUTPUT ROUTINE		
+.org    0A00h	        ; 
+            LD HL,(store_st)	;	PUT START IN HL 
+start2:     CALL outb     	    ;	OUTPUT BYTE 
+            LD BC,(store_end)	;	END IN BC 
+            OR A	        ;	CLEAR CARRY 
+            PUSH HL	        ;	SAVE START 
+            SBC HL,BC   	;	SUB END FROM START 
+            POP HL      	;	RECOVER START 
+            JR C,start2	    ;	JUMP IF END <<THAN 
+            RET	            ;	START ELSE RETURN 
+;
+outb:       LD A,80	        ;	SET START BIT 
+            OUT (01),A	    ;	OUT START BIT 
+            CALL 0A2Dh	    ;	CALL DELAY 
+            LD A,(HL)	    ;	GET BYTE TO OUTPUT 
+            INC HL	        ;	POINT TO NEXT BYTE 
+            LD B, 08	    ;	SET COUNT FOR 8 BITS 
+lp_1:       RRCA	        ;	PUT BTT INTO BIT 7
+            XOR 80	        ;	COMPLEMENT BIT 
+            OUT (01),A	    ;	OUTPUT IT 
+            CALL dl_1   	;	CALL DELAY 
+            DJNZ lp_1	    ;	DO FOR 8 BITS 
+            XOR A       	;	CLEAR FOR STOP BIT 
+            OUT (01),A	    ;	OUT STOP BIT x2 
+            CALL dl_1	    ;	FIRST STOP DELAY 
+dl_1:       PUSH BC	        ;	SAVE BIT COUNT 
+            LD B,36	        ;	LOAD B WITH DELAY 
+dl_2:       DJNZ dl_2   	;	DO DELAY 
+            POP BC      	;	RECOVER BIT COUNT 
+            RET         	;	DONE
+;
+;
