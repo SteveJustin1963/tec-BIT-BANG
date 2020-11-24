@@ -98,7 +98,7 @@ https://raspberrypi.stackexchange.com/questions/1987/can-raspberry-pi-reliably-b
 
 ## Iterate, new hypotheses or predictions
 1. rewrite in Forth
-2. alternative https://github.com/SteveJustin1963/tec-BOOT
+2. alternative https://github.com/SteveJustin1963/tec-BOOT-JM
 
  
 
