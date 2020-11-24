@@ -9,5 +9,7 @@ Investigate Bit Bang Serial for the TEC-1
 
 http://www.edaboard.com/attachment.php?attachmentid=82290&d=1351849308
 
-file:///D:/Engineering/Talking%20Electronics/tec-BOOKS/Mag/tec_times_1990_03.pdf
+https://github.com/SteveJustin1963/tec-BOOKS/blob/master/TE/Mag/tec_times_1990_03.pdf
+
+
 
