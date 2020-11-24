@@ -4,8 +4,7 @@ Investigate Bit Bang Serial for the TEC-1, no UART, only latch
 
 
 ## Observe and Question 
-ascii and or file transfer useful addition to hex keypad entry. whats the easiest hack to transfer to TEC1? bitbang !
-see
+bin/hex/ascii transfer useful in addition to keypad entry. whats the easiest hack to transfer to TEC1? bitbang !
 
 
 ## Theory
