@@ -5,8 +5,9 @@ Investigate Bit Bang Serial for the TEC-1
 
 * Southern Cross hack for TEC-1 has bit bang code, investigate
 
+# Ref
 
 http://www.edaboard.com/attachment.php?attachmentid=82290&d=1351849308
 
-
+file:///D:/Engineering/Talking%20Electronics/tec-BOOKS/Mag/tec_times_1990_03.pdf
 
