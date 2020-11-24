@@ -43,21 +43,6 @@ examples
 * or true serial-serial, use MAX232 chip 
   
 ### Steps
-1. Source code for Bit Bang Serial without UART (unfinsihed project)
-2. Add RAM stack, https://github.com/SteveJustin1963/tec-RAM-STACK
-3. Locate free IO line, and .equ in code to match port
-
-5. Enter hex code into TEC-1 (furuture ROM ?) 
- * or via https://github.com/SteveJustin1963/tec-EMU-BG
-6
-Connect TTL end to TEC1
-Upload HEX via serial
-
-download them with tokens; 
-fetch a byte, 
-store byte 
-run [those] subroutine 
-
 
 ## Test
 
@@ -71,6 +56,10 @@ run [those] subroutine
 
 ## Acknowledgements
 Jim Robertson
+Chuck Moore
+John hardy
+Jack Ganssle
+SCC
 
 
 ## Inspiration:
