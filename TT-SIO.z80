@@ -2,7 +2,8 @@
 ;
 store_st    equ     0898h 
 store_end   equ     089Ah
-
+.binfrom 0898
+.binto 
 
 .org    0900h	    ;  
 
