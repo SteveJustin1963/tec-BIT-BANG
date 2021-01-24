@@ -32,7 +32,7 @@ buffer > reverse from above
 * digital radio tx, https://github.com/SteveJustin1963/tec-RTTY
   
   
-
+$[] https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/dat-ser-in.png
 
 
 
