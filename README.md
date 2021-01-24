@@ -4,11 +4,6 @@ Investigate Bit Bang Serial for the TEC-1, no UART, only latch. for proper seria
 pc termnal > ascii > ttl > tec1-latch > bit/time/loop > byte > buffer code
 buffer > reverse from above
 
-## io latches for serial
-* serial in dat board
-* serial in 74c923 hack
-* serial out, pin 6
-
 
 ## code examples from
 * Southern Cross Computer (tec-1 clone), https://github.com/SteveJustin1963/tec-Southern-Cross-Computer
@@ -30,12 +25,16 @@ buffer > reverse from above
 * ppp protocol, https://github.com/SteveJustin1963/tec-TCPIP
 * DCE serial device w/r/control
 * digital radio tx, https://github.com/SteveJustin1963/tec-RTTY
-  
-  
+
+## io latches for serial
+
+* serial in dat board
 ![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/dat-ser-in.png)
 
+* serial out, pin 6
 ![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/tec1-serial-out-pin6.png)
 
+* serial in 74c923 hack
 ![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/txrx-kb.png)
 
 
