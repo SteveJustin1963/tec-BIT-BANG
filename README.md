@@ -5,7 +5,7 @@ pc termnal > ascii > ttl > tec1-latch > bit/time/loop > byte > buffer code
 buffer > reverse from above
 
 code examples from
-* Southern Cross Computer (tec-1 clone)
+* Southern Cross Computer (tec-1 clone), https://github.com/SteveJustin1963/tec-Southern-Cross-Computer
 * tec_times 1990, serial loader
 * bitbang from http://www.ganssle.com/articles/auart.htm
 * rs2014
@@ -17,14 +17,14 @@ io latches for serial
 
 
 serial apps
-* uploader convert intel hex transfer to bytes
-* serial port 3 token forth, read, write, run (3rs) 
+* intel hex file uploader, rs2014, 
+* 3 token forth, https://github.com/SteveJustin1963/tec-3RS
 * stream data from app into serial
-  * serial video
-  * data logging
-  * ppp protocol
-  * DCE serial device w/r/control
-  * digital radio tx
+* serial video, https://github.com/SteveJustin1963/tec-EYE
+* data logging, https://github.com/SteveJustin1963/tec-DATA-LOG
+* ppp protocol, https://github.com/SteveJustin1963/tec-TCPIP
+* DCE serial device w/r/control
+* digital radio tx, https://github.com/SteveJustin1963/tec-RTTY
   
   
 
