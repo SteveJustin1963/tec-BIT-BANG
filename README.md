@@ -20,7 +20,7 @@ serial apps
 * uploader convert intel hex transfer to bytes
 * serial port 3 token forth, read, write, run (3rs) 
 * stream data from app into serial
- * serial video
+  * serial video
 
 
 
