@@ -31,8 +31,10 @@ buffer > reverse from above
 * serial in dat board
 ![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/dat-ser-in.png)
 
+
 * serial out, pin 6
 ![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/tec1-serial-out-pin6.png)
+
 
 * serial in 74c923 hack
 ![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/txrx-kb.png)
