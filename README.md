@@ -21,6 +21,12 @@ serial apps
 * serial port 3 token forth, read, write, run (3rs) 
 * stream data from app into serial
   * serial video
+  * data logging
+  * ppp protocol
+  * DCE serial device w/r/control
+  * digital radio tx
+  
+  
 
 
 
