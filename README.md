@@ -1,8 +1,7 @@
  
 Investigate Bit Bang Serial for the TEC-1, no UART, only latch. for proper serial use UART chip. 
  
-pc termnal > ascii > ttl > tec1-latch > bit/time/loop > byte > buffer code
-buffer > reverse from above
+pc termnal > ascii > ttl > tec1-latch > bit/time/loop > byte > buffer > code 
 
 
 ## code examples from
