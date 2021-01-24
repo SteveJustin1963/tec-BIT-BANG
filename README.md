@@ -32,11 +32,11 @@ buffer > reverse from above
 * digital radio tx, https://github.com/SteveJustin1963/tec-RTTY
   
   
-![] (https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/dat-ser-in.png)
+![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/dat-ser-in.png)
 
-![] (https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/tec1-serial-out-pin6.png)
+![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/tec1-serial-out-pin6.png)
 
-![] (https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/txrx-kb.png)
+![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/txrx-kb.png)
 
 
 
