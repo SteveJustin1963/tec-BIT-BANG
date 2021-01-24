@@ -36,9 +36,9 @@ buffer > reverse from above
 ![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/tec1-serial-out-pin6.png)
 
 
-* serial in 74c923 hack
-![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/txrx-kb.png)
 
+![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/txrx-kb.png)
+* serial in 74c923 hack
 
 
 
