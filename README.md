@@ -14,19 +14,13 @@ pc termnal > ascii > ttl > port >data bus > byte > buffer > code
 
 
 ![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/dat-ser-in2.png)
-* serial on DAT board 
-
-
-* lift and swap pins on 273 latch say pins 9 and 8 so data path reversed 
-
+* serial on DAT board, D0 latch IN, D7 spkr OUT 
 
 ![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/another-hack1.png)
 * use "shift" for serial in via Q  
 
-* bad hack yuk
-![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/txrx-kb.png)
-* serial in 74c923 hack
-
+![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/swap.png)
+* lift and swap pins on 273 latch say pins 9 and 8 so data path reversed 
 
 
 
