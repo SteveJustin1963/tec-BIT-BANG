@@ -18,7 +18,7 @@ pc termnal > ascii > ttl > port >data bus > byte > buffer > code
 * lift and swap pins on 273 latch say pins 9 and 8 so data path reversed 
 
 * use "shift" for serial in via Q  
-![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/another-hack.png)
+![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/another-hack1.png)
 
 
 * bad hack yuk
