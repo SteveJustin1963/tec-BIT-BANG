@@ -12,15 +12,16 @@ pc termnal > ascii > ttl > port >data bus > byte > buffer > code
 
 ## io latches for serial
 
-* serial in dat board
+* serial in dat board, serial out, D6
 ![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/dat-ser-in.png)
 
+* lift and swap pins on 273 latch say pins 9 and 8 so data path reversed 
 
-* serial out, pin 6
-![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/tec1-serial-out-pin6.png)
+* use "shift" for serial in via Q  
+![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/another-hack.png)
 
 
-
+* bad hack yuk
 ![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/txrx-kb.png)
 * serial in 74c923 hack
 
