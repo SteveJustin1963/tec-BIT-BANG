@@ -20,7 +20,7 @@ pc termnal > ascii > ttl > port >data bus > byte > buffer > code
 * untested idea...use "shift" for serial in via Q  
 
 ![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/swap.png)
-* liftuntested idea... and swap pins on 273 latch say pins 9 and 8 so data path reversed 
+* untested idea... lift and swap pins on 273 latch say pins 9 and 8 so data path reversed 
 
 
 
