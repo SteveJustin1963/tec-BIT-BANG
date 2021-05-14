@@ -5,7 +5,7 @@ pc termnal > ascii > ttl > port >data bus > byte > buffer > code
 
 ## code examples 
 * Southern Cross Computer (tec-1 clone), https://github.com/SteveJustin1963/tec-Southern-Cross-Computer
-* tec_times 1990, serial uploader
+* tec_times 1990, serial uploader https://github.com/SteveJustin1963/tec-BOOKS/blob/master/TE/Mag/tec_times_1990_03.pdf
 * bitbang from http://www.ganssle.com/articles/auart.htm
 * rs2014
 * 
