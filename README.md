@@ -10,17 +10,19 @@ pc termnal > ascii > ttl > port >data bus > byte > buffer > code
 * rs2014
 * 
 
-## io latches for serial
+## latches
 
+serial on DAT board, D0 latch IN, D7 spkr OUT 
 
 ![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/dat-ser-in2.png)
-* serial on DAT board, D0 latch IN, D7 spkr OUT 
+
+untested idea...use "shift" for serial in via Q  
 
 ![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/another-hack1.png)
-* untested idea...use "shift" for serial in via Q  
+
+untested idea... lift and swap pins on 273 latch say pins 9 and 8 so data path reversed 
 
 ![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/swap.png)
-* untested idea... lift and swap pins on 273 latch say pins 9 and 8 so data path reversed 
 
 
 
