@@ -1,14 +1,13 @@
  
-Investigate Bit Bang Serial for the TEC-1, no UART, only latch etc.  
-pc termnal > ascii > ttl > port >data bus > byte > buffer > code 
+Investigate Bit Bang Serial for the TEC-1, that means no UART, only a latch  for each direction.   
 
 
 ## code examples 
-* Southern Cross Computer (tec-1 clone), https://github.com/SteveJustin1963/tec-Southern-Cross-Computer
-* tec_times 1990, serial uploader https://github.com/SteveJustin1963/tec-BOOKS/blob/master/TE/Mag/tec_times_1990_03.pdf
-* bitbang from http://www.ganssle.com/articles/auart.htm
-* rs2014
-* 
+- Southern Cross Computer (tec-1 clone), https://github.com/SteveJustin1963/tec-Southern-Cross-Computer
+- tec_times 1990, serial uploader https://github.com/SteveJustin1963/tec-BOOKS/blob/master/TE/Mag/tec_times_1990_03.pdf
+- bitbang from http://www.ganssle.com/articles/auart.htm
+- RS2014
+ 
 
 ## latches
 
