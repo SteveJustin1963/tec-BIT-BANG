@@ -28,7 +28,7 @@ Investigate Bit Bang Serial for the TEC-1, that means no UART, only a latch  for
 15 dec 2021
 Craig Jones
 
-How do you get a serial port on your TEC-1D?
+How do you get a serial port on your TEC-1D? This is how...
 
 ![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/268641780_285024776923215_2514945051842294534_n.jpg)
 
