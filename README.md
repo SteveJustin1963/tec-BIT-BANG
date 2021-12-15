@@ -2,12 +2,12 @@
 Investigate Bit Bang Serial for the TEC-1, that means no UART, only a latch  for each direction.   
 
 
-## bitbang examples 
+## some examples  
 - Southern Cross Computer (tec-1 clone), https://github.com/SteveJustin1963/tec-Southern-Cross-Computer
 - tec_times 1990, serial uploader https://github.com/SteveJustin1963/tec-BOOKS/blob/master/TE/Mag/tec_times_1990_03.pdf
 - bitbang from http://www.ganssle.com/articles/auart.htm
 - RS2014
-- 
+- and more
   
 
 ### serial on DAT board, D0 latch IN, D7 spkr OUT 
