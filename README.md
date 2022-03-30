@@ -32,7 +32,7 @@ How do you get a serial port on your TEC-1D? This is how...
 
 ![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/268641780_285024776923215_2514945051842294534_n.jpg)
 
-1[](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/bb-wir1.png)
+ 
 
  
 
