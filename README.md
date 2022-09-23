@@ -14,16 +14,6 @@ Investigate Bit Bang Serial for the TEC-1, that means no UART, only a latch  for
 
 ![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/dat-ser-in2.png)
 
-### untested idea 1
-...use "shift" for serial in via Q  
-
-![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/another-hack1.png)
-
-### untested idea 2
-... lift and swap pins on 273 latch say pins 9 and 8 so data path reversed 
-
-![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/swap.png)
-
 ### the CJ port --- the best way
 15 dec 2021 Craig Jones
 
@@ -33,8 +23,16 @@ How do you get a serial port on your TEC-1D? This is how...
 
 ![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/bb-wir1.png)
 
- 
 
 
 
+### untested idea 1
+...use "shift" for serial in via Q  
+
+![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/another-hack1.png)
+
+### untested idea 2
+... lift and swap pins on 273 latch say pins 9 and 8 so data path reversed 
+
+![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/swap.png)
 
