@@ -10,14 +10,12 @@ Investigate Bit Bang Serial for the TEC-1, that means no UART, only a latch  for
 - and more
   
 
-### serial on DAT board, D0 latch IN, D7 spkr OUT 
+## DAT board- serial, D0 latch IN, D7 spkr OUT 
 
 ![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/dat-ser-in2.png)
 
-### the CJ port --- the best way
-15 dec 2021 Craig Jones
-
-How do you get a serial port on your TEC-1D? This is how...
+## 2021 Craig Jones bit bang  
+a very simple way to get a serial port on your TEC-1D...
 
 ![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/268641780_285024776923215_2514945051842294534_n.jpg)
 
