@@ -25,14 +25,3 @@ How do you get a serial port on your TEC-1D? This is how...
 
 
 
-
-### untested idea 1
-...use "shift" for serial in via Q  
-
-![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/another-hack1.png)
-
-### untested idea 2
-... lift and swap pins on 273 latch say pins 9 and 8 so data path reversed 
-
-![](https://github.com/SteveJustin1963/tec-BIT-BANG/blob/master/pics/swap.png)
-
